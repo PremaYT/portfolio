@@ -27,3 +27,13 @@ function closeModal() {
   closeIcons[0].classList.remove("show-element");
   hamburger[0].classList.remove("hide-element");
 }
+
+document.querySelector(".hamburger button").onclick = openModal;
+
+document.querySelector(".close-icon button").onclick = closeModal;
+
+document
+  .querySelectorAll(".nav-item>a, .social-share-link>a")
+  .forEach((ele) => {
+    ele.onclick = closeModal;
+  });

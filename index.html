@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio | Prema YT</title>
+  </head>
+  <script src="./js/script.js"></script>
+
+  <body>
+    <header>
+      <div class="logo-container"><a class="logo" href="/">Portfolio</a></div>
+      <nav class="navbar">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="/#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="/#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-btn-resume"
+              role="button"
+              href="./assets/Resume_PremaYT.docx"
+              download="Resume_PremaYT"
+              >Resume</a
+            >
+          </li>
+        </ul>
+        <ul class="social-share">
+          <li class="social-share-link">
+            <a href="mailto: pytabareddi10@gmail.com" class="fa fa-email"></a>
+          </li>
+          <li class="social-share-link">
+            <a
+              href="https://www.linkedin.com/in/prema-tabareddi-a68794191/"
+              class="fa fa-linkedin"
+              target="_blank"
+            ></a>
+          </li>
+          <li class="social-share-link">
+            <a
+              href="https://github.com/PremaYT"
+              class="fa fa-github"
+              target="_blank"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <button class="fa-bars hamburger-btn" onclick="openModal()"></button>
+      </div>
+      <div class="close-icon" onclick="closeModal()">
+        <button class="fa-xmark"></button>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <h1>Hi, <span>I am Prema!</span></h1>
+        <p class="intro">
+          Front end developer, working for an IT firm. Enthusiastic learner
+          curious to learn and implement new things. My area of expertise is
+          front end technologies like ReactJS, JavaScript, HTML and CSS.
+        </p>
+      </section>
+      <section id="skills">
+        <h2 class="section-heading">
+          <span class="fa fa-gear"></span>Skills :
+        </h2>
+        <p>
+          ReactJs, gatsbyJS, JavaScript, HTML, CSS, React Hooks, Contentful CMS,
+          Graphql, Algolia, Git, GitHub, tailwind css, redux, redux-thunk,
+          redux-saga, Figma, powershell.
+        </p>
+      </section>
+      <section id="experience">
+        <h2 class="section-heading">
+          <span class="fa fa-briefcase"></span>Experience :
+        </h2>
+        <ul class="experience_container">
+          <li>
+            <h3 class="experience_organization">
+              <span class="dot"></span> Senior Software Engineer at LTIMindtree
+              | Dec 2021 - July 2024 | Bangalore
+            </h3>
+            <p>
+              Developed vaious web applications from scratch using
+              <b>gatsby</b> react framework, <b>contentful CMS</b> and
+              <b>tailwind css</b>. Mainly involed in components development, api
+              integrations, page performance fixes and code quality
+              improvements.
+            </p>
+          </li>
+          <li>
+            <h3 class="experience_organization">
+              <span class="dot"></span> Software Engineer at Wissen Technology |
+              Sept 2021 - Nov 2021 | Bangalore
+            </h3>
+            <p>
+              Added new feature to customer support dashboard using
+              <b>ReactJS</b> and <b>styled components</b>. Focused on code
+              optimisation and page performance.
+            </p>
+          </li>
+          <li>
+            <h3 class="experience_organization">
+              <span class="dot"></span> Frontend Developer at TCS | April 2020 -
+              Sept 2021 | Bangalore
+            </h3>
+            <p>
+              Worked on user dashboard to fetch and list api details. Performed
+              CRUD operations on data fetched. Technologies used are
+              <b>ReactJS</b>, <b>CSS</b> and <b>REST api</b>.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section id="education">
+        <h2 class="section-heading">
+          <span class="fa fa-graduation-cap"></span> Education :
+        </h2>
+        <ul class="education_container">
+          <li>
+            <h3 class="education-grade">Bacholer of Engineering | 2013-17</h3>
+            <p>
+              Electronics and Communication Engineering at Basaveshwar
+              Engineering College, Bagalkot | CGPA 8.57
+            </p>
+          </li>
+          <li>
+            <h3 class="education-grade">
+              Senior School Certificate Examination | 2012-13
+            </h3>
+            <p>Jawahar Navodaya Vidyalaya, Haveri | 85.66%</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer">
+      <div>
+        <p>
+          &copy;
+          <script>
+            getDate();
+          </script>
+          Portfolio | All rights reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

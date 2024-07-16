@@ -91,10 +91,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body * {
+  scroll-margin-top: 90px;
+}
+
 /* header */
 header {
   padding: 1.5rem;
   display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #222629;
   justify-content: space-between;
   align-items: center;
   /* border-bottom: 1px solid #474b4f; */
@@ -245,6 +252,10 @@ header {
     justify-content: center;
   }
 
+  .fa:hover {
+    color: initial;
+  }
+
   .social-share-link {
     margin: 0 15px;
   }
@@ -255,6 +266,10 @@ header {
 }
 
 /* page content */
+
+main {
+  margin-top: 90px;
+}
 
 section {
   padding: 2rem 4rem;
@@ -346,13 +361,10 @@ h3.experience_organization {
 #footer {
   display: flex;
   margin: 0 auto;
-  /* padding: 2rem auto !important; */
   color: #474b4f;
   font-size: 2rem;
   justify-content: center;
   align-items: center;
-  /* position: fixed;
-  bottom: 0; */
 }
 
 #footer div {
